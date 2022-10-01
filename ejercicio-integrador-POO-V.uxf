@@ -1,0 +1,44 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>36</x><y>45</y><w>144</w><h>72</h></coordinates><panel_attributes>CentroEducativo
+-
+-
++ agregarAlumno(Alumno)
++ cantAprobados(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>45</y><w>153</w><h>99</h></coordinates><panel_attributes>Alumno
+-
+- DNI: String
+- apellido: String
+- nombre: String
+-
++ agregarExamen(Examen)
++ aprobo(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>207</y><w>126</w><h>72</h></coordinates><panel_attributes>/Examen/
+-
+- fecha: String
+-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>171</x><y>81</y><w>117</w><h>45</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- alumnos</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>324</x><y>135</y><w>81</w><h>90</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- examenes</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>144</x><y>315</y><w>144</w><h>126</h></coordinates><panel_attributes>ExamenEscrito
+-
+_- MIN_NOTA: int = 0_
+_- MAX_NOTA: int = 10_
+_- NOTA_APROB: int = 6_
+_- MIN_DURACION: int = 90_
+- duracion: int
+- nota: int
+-
++ aprobo(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>351</x><y>315</y><w>126</w><h>45</h></coordinates><panel_attributes>ExamenOral
+-
+-
++ aprobo(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>351</x><y>432</y><w>126</w><h>99</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+NivelSatisfaccion
+-
+_+ INSUFICIENTE_
+_+ SUFICIENTE_
+_+ EXCELENTE_
+-
++ ordinal(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>396</x><y>351</y><w>117</w><h>99</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+-nivelSatisfaccion</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>342</x><y>270</y><w>90</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;50</additional_attributes></element><element><id>Relation</id><coordinates><x>234</x><y>270</y><w>99</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>72</x><y>171</y><w>126</w><h>63</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Aprobable/
+-
+-
+/+ aprobo(): boolean/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>189</x><y>135</y><w>99</w><h>81</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;70;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>189</x><y>207</y><w>99</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;90;60</additional_attributes></element></diagram>
